@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.Header_Main{
+    width: 1300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/2Sm3asuwKVNTzgm2nF6hp5mwEfh.jpg");
+
+}
+.Section_1_Main{
+    width: 1300px;
+
+}
+.section-container {
+    overflow-x: auto;
+    padding: 20px;
+    white-space: nowrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-container {
+    display: inline-block;
+    margin-right: 20px;
+    height: 100% !important;
+    vertical-align: top;
+    white-space: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie-card {
+    border-radius: 5px;
+    display: inline-block;
+    width: 150px;
+    height: 100% !important;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.card-img-top {
+    width: 150px;
+    height: 225px;
+    border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-body {
+    padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-title {
+    font-size: 16px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+}
+
+.Section_2_Main{
+    width: 1300px;
+    height: 300px;
+}
+.Section_3_Main{
+    width: 1300px;
+    height: 300px;
+
+}
+.movie-container-3 {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px; /* добавьте отступы по вашему выбору */
+}
+
+.movie-card-3 {
+    flex: 0 0 auto;
+    width: 300px; /* задайте ширину карточки по вашему выбору */
+    margin-right: 10px; /* добавьте отступы между карточками */
+}
+
+.Section_4_Main{
+    width: 1300px;
+    height: 300px;
+
+}
+.Footer{
+    width: 100%;
+    height: 250px;
+}
+.Footer {
+    background-color: #0c1a23;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding:50px 150px;
+}
+
+
+.Footer p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.Footer div {
+    width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+    .Footer {
+        flex-wrap: wrap;
+    }
+    .Footer div {
+        width: 50%;
+    }
+}
+.re{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(242, 179, 165 0.6);
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    top: 5pc;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+.re_1{
+    width: 498px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    border: 1px solid;
+    top: 25pc;
+    transition: 0.2s;
+}
+.re:hover . re_1{
+    top: 5pc        ;
+}
+
+
+.people-container {
+
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    width: 235px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card > div {
+    margin-top: 10px;
+    text-align: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card > div {
+    text-align: center;
+}
+
+.card p {
+    margin: 0;
+}
+.containerForCard{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.crd-main{
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(31, 31, 180, 0.5);
+}
+.divImg{
+    width: 300px !important;
+    height: 450px !important;
+    border-radius: 10px;
+}
+
+
+
+
