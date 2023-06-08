@@ -32,8 +32,7 @@ function Card_Main() {
                               <div className="ml-[40px] text-white">
                                   <div>
                                       <h2 className="mt-[20px] ">{movie && movie.title }</h2>
-                                      {movie && movie.genres && (
-                                        <p>{movie.genres.map(genre => genre.name).join(', ')}</p>
+nn                                        <p>{movie.genres.map(genre => genre.name).join(', ')}</p>
                                       )}
                                       <p>{movie && movie.release_date}</p>
                                       {movie && movie.overview && (
